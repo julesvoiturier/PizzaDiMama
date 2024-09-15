@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Pencerio';
+      font-style: normal;
+      src: url(./assets/fonts/Pencerio-Hairline.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Switzer';
+      font-style: normal;
+      src: url(./assets/fonts/Switzer-Semibold.woff2) format('woff2');
+    }
+}
