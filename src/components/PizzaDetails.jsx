@@ -20,7 +20,7 @@ const PizzaDetails = () => {
 
     return (
         <div onClick={()=> openCart == true ? dispatch(cartToggle()) : ""} className={`${openCart == true ? `brightness-[30%]` : `brightness-[100%]`} pt-[70px] h-screen bg-yellow flex flex-col gap-10 justify-center items-center`}>
-            <Link onClick={()=> scrollToTop()} to={`/`} className={`${openCart == true ? "pointer-events-none" : ""} bg-black text-white transition-all hover:brightness-[95%] top-[100px] left-[30px] fixed px-6 py-2 font-bold rounded-md`}>Close</Link>
+            <Link onClick={()=> scrollToTop()} to={`/Home`} className={`${openCart == true ? "pointer-events-none" : ""} bg-black text-white transition-all hover:brightness-[95%] top-[100px] left-[30px] fixed px-6 py-2 font-bold rounded-md`}>Close</Link>
             <div className=' relative w-[70%] h-[50%] max-md:h-auto max-sm:w-[80%] rounded-full p-5 pr-[150px] max-md:pr-5 group bg-white'>
                 <div className='w-full h-full flex max-md:flex-col items-center max-md:justify-center gap-[50px]'>
                     <img src={new URL(`../assets/img/${data[0][id].image}`, import.meta.url).href} className='h-full relative aspect-square rounded-full bg-white animate-[spin_100s_linear_infinite]'></img>
