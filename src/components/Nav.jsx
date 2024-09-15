@@ -20,17 +20,17 @@ const Nav = () => {
     }
 
     useEffect(() => {
-        navigate('/pizzadimama/Home')
+        navigate('/Home')
     }, []);
 
 
     return (
         <div className='w-full h-[80px] bg-black fixed flex justify-between pl-8 pr-4 z-20'>
             <div className='h-full flex items-center'>
-                <Link to={`/pizzadimama/Home`} onClick={()=> {scrollToTop(); openCart == true ? dispatch(cartToggle()) : "" }} className='text-white font-extrabold font-Pencerio text-[30px]'>Pizza di Mama</Link>
+                <Link to={`/Home`} onClick={()=> {scrollToTop(); openCart == true ? dispatch(cartToggle()) : "" }} className='text-white font-extrabold font-Pencerio text-[30px]'>Pizza di Mama</Link>
             </div>
             <div className='flex items-center gap-2 group'>
-                <Link to={`/pizzadimama/MakeYourPizza`} onClick={()=> {scrollToTop(); openCart == true ? dispatch(cartToggle()) : ""}} className={` bg-main_orange text-white font-bold font-Switzer px-6 py-2 rounded-md transition-all hover:brightness-[95%]`}>Custom</Link>
+                <Link to={`/MakeYourPizza`} onClick={()=> {scrollToTop(); openCart == true ? dispatch(cartToggle()) : ""}} className={` bg-main_orange text-white font-bold font-Switzer px-6 py-2 rounded-md transition-all hover:brightness-[95%]`}>Custom</Link>
                 <button onClick={()=> dispatch(cartToggle())} className='group bg-white px-6 transition-all hover:bg-[#e4e4e4] py-2 rounded-md font-bold relative font-Switzer'>Cart
                     <div className={`${counter < 1 ? 'hidden':'visible'} bg-yellow2 absolute text-[12px] flex justify-center items-center size-[25px] bg-yellow-300 font-medium rounded-full top-[-10px] right-[-10px]`}>{counter}</div>
                 </button>
