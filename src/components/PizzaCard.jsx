@@ -29,7 +29,7 @@ const PizzaCard = (props) => {
                 </div>
                 <div className={`relative h-[80%] w-full group`}>
                     <img className='w-full aspect-square  group-hover:brightness-50 transition-all' src={new URL(`../assets/img/${props.image}`, import.meta.url).href} alt="" />
-                    <div className={`absolute transition-all top-[100%] w-full h-full flex flex-col justify-center items-center group-hover:top-[0%] gap-2`}>
+                    <div className={`absolute blur-lg transition-all top-[100%] opacity-0 w-full h-full flex flex-col justify-center items-center group-hover:top-[0%] group-hover:opacity-100 group-hover:blur-none gap-2`}>
                         <button onClick={()=> dispatch(addToCart({pizzaName: props.pizzaName, price: props.price}))} className='relative w-[150px] px-4 py-2 bg-main_orange text-white rounded-md flex justify-center items-center'>Add to cart
                                 {
                                     cart.length > 0 ? cart.map((item, key) => {

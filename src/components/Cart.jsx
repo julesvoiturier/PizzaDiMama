@@ -41,7 +41,7 @@ const Cart = () => {
                                     </div>
                                 </div>
                             )
-                        }) : <div className='whitespace-nowrap text-white'>Your cart is as empty ...</div>
+                        }) : <div className='whitespace-nowrap text-white'>Your cart is empty ...</div>
                     }
                 </div>
                 <div className='w-full flex justify-end pt-4'>
